@@ -113,6 +113,7 @@ def plot_misclassification_vs_scale(misclassification_counts_csv_filepath, outpa
 
     
 if __name__ == "__main__": 
+    # Define your own path here
     misclassification_count_csv = "data/processed/misclassification_counts_upscaled_cloud_mask.csv"
     
     plot_misclassification_vs_scale(misclassification_count_csv, "output/misclassification_count_cloud_cover.png")

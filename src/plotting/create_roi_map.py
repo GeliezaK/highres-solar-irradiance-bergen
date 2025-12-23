@@ -47,6 +47,7 @@ def summarize_dsm(dsm_filepath):
 
 
 if __name__ == "__main__":
+    # Define your own path here
     dsm_filepath = "data/processed/bergen_dsm_10m_epsg4326.tif"
 
     cmap = plt.cm.terrain

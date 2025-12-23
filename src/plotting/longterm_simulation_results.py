@@ -877,6 +877,7 @@ def calculate_energy_for_locations(monthly_irradiation_spatial_filepath, A=25, e
 
 
 if __name__ == "__main__": 
+    # Define your own paths here
     stations_data_raw_path = "data/raw/frost_ghi_1H_Flesland_Florida_2015-2025.csv"
     daily_simulation_model2_path = "data/processed/longterm_sim_ghi_5000_k=monthly.csv"
     daily_simulation_model1_path = "data/processed/longterm_sim_ghi_5000_k=annual.csv"

@@ -120,14 +120,13 @@ def add_viewing_angles(cloud_cover_filepath, viewing_angle_filepath, outpath):
 
 
 if __name__ == "__main__": 
-    # Import dataframes 
-    # Paths
+    # Define your own paths here
     viewing_angles_folder_path = "data/processed/S2_viewing_angles"
     viewing_angles_table_path = "data/processed/S2_viewing_angles_full_table.csv"
     s2_inpath = "data/processed/s2_cloud_cover_table_small_and_large.csv"
     
     # Single files in folder into one file 
-    #merge_all_in_path(viewing_angles_folder_path, viewing_angles_table_path)
+    merge_all_in_path(viewing_angles_folder_path, viewing_angles_table_path)
     
     plot_std_hist_of_daily_groups(viewing_angles_table_path)
     

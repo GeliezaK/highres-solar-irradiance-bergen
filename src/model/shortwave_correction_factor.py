@@ -204,6 +204,7 @@ def calculate_sw_dir_cor(
 
 
 def main(): 
+    # Define your own paths here
     sw_cor_outpath = "data/processed/sw_cor/sw_cor_bergen_binned.nc"
     DSM_filepath = "data/processed/bergen_dsm_10m_epsg4326_reducer_mean.tif"
     year=2023

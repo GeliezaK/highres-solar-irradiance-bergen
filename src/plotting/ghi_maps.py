@@ -136,6 +136,7 @@ def plot_irradiance_all_obs(ghi_monthly_maps_filepath):
     
     
 if __name__ == "__main__":
+    # Define your own paths here
     ghi_maps_filepath = "data/processed/simulated_ghi_without_terrain_only_mixed_100m.nc"
     monthly_ghi_maps = "data/processed/simulated_irradiance_monthly.nc"
     monthly_clear_sky_index_maps = "data/processed/simulated_clear_sky_index_monthly_mixed_sky.nc"

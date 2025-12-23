@@ -863,6 +863,7 @@ def merge_area_mean_clear_sky_index_with_sky_type(area_mean_clear_sky_index_path
     
 
 if __name__ == "__main__":
+    # Define your own paths here
     sample_file = "data/raw/claas3_201506-2025-08/claas3/cpp/2020/05/04/CPPin20200504110000405SVMSG01MD.nc"
     aux_file = "data/raw/claas3_201506-2025-08/claas3/CM_SAF_CLAAS3_L2_AUX.nc"
     data_folder = "data/raw/CLARA_SAL_2015-2025"

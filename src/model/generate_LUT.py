@@ -367,6 +367,7 @@ def merge_LUT_files(lut_folder, output_file):
 
 
 if __name__ == "__main__":
+    # Define your own paths here
     # Read cloud properties from claas-3
     df_claas = pd.read_csv("data/processed/s2_cloud_cover_table_small_and_large_with_simulated_florida_flesland_ghi.csv")
     df_claas = df_claas[["date", "blue_sky_albedo_median", "cot_median_small", "cth_median_small", "cph_median_small"]]

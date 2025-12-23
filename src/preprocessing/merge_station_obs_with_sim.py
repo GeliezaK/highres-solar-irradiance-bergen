@@ -117,6 +117,7 @@ def add_simulated_florida_flesland_ghi_by_date(obs_table_path, df, out_path):
 
 
 if __name__ == "__main__": 
+    # Define your own paths here
     obs_table_path = "data/processed/s2_cloud_cover_table_small_and_large_with_cloud_props.csv"
     frost_table_path = "data/processed/frost_ghi_1M_Flesland_Florida_10:30-11:30UTC.csv"
     model_ghi_path = "data/processed/simulated_ghi_thresh40.nc"

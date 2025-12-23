@@ -654,6 +654,7 @@ def describe_resuts(results):
    
 
 if __name__ == "__main__": 
+    # Define your own paths here
     monthly_sky_type_counts_filepath = "data/processed/monthly_sky_type_counts.csv"
     area_mean_clear_sky_index_filepath = "data/processed/area_mean_clear_sky_index_per_obs.csv"
     clear_sky_index_monthly_mixed_sky_filepath = "data/processed/simulated_clear_sky_index_monthly_mixed_sky.nc"

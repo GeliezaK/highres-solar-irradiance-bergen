@@ -291,7 +291,7 @@ def save_shadow_masks_to_nc(cloud_props_filepath, sat_cloud_mask_dir, out_nc_fil
 
 
 if __name__=="__main__":
-    # Cloud shadow computation
+    # Define your own paths here
     s2_cloud_mask_folderpath = "data/raw/S2_cloud_mask_large_thresh_40"
     cloud_cover_table_filepath = "data/processed/s2_cloud_cover_table_small_and_large_with_stations_data.csv"
     single_shadow_maps_nc = "data/processed/cloud_shadow_thresh40.nc"

@@ -164,6 +164,7 @@ def plot_sky_type_probs_with_sd(samples_by_month, outpath="output/sky_type_proba
 
 
 if __name__ == "__main__":
+    # Define your own paths here
     area_mean_k_path = "data/processed/area_mean_clear_sky_index_per_obs.csv"
     monthly_sky_type_counts_filepath = "data/processed/monthly_sky_type_counts.csv"
 

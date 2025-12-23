@@ -260,6 +260,7 @@ def check_pixel_location(nc_filepath, var_name, lat_target, lon_target, time_ind
 
 
 def main():
+    # Define your own paths here
     sw_cor_filepath = "data/processed/sw_cor/sw_cor_bergen.nc"
     DSM_filepath = "data/processed/bergen_dsm_10m_epsg4326_reducer_mean.tif"
     plot_sw_cor_for_timestep(sw_cor_file=sw_cor_filepath, elevation_file=DSM_filepath, ind=100)

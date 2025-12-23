@@ -579,6 +579,7 @@ def test_heteroscedasticity_white(flesland_sim, flesland_obs,
 
 
 def main(): 
+    # Define your own paths here
     sim_ECAD_path = "data/processed/s2_cloud_cover_table_small_and_large_with_simulated_florida_flesland_ghi.csv"
     sim_vs_obs_path = "data/processed/s2_cloud_cover_with_stations_with_pixel_sim.csv"
 

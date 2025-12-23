@@ -782,7 +782,7 @@ def simulate_stations_pixels_corrected(cloud_cover_filepath, lut_filepath, cloud
 
 
 if __name__ == "__main__": 
-    # Paths
+    # Define your own paths here
     cloud_cover_table_filepath = "data/processed/s2_cloud_cover_table_small_and_large_with_stations_data.csv"
     DSM_filepath = "data/processed/bergen_dsm_10m_epsg4326.tif"
     sw_cor_filepath = "data/processed/sw_cor/sw_cor_bergen.nc" # direct sw correction factor for mean reducer dsm

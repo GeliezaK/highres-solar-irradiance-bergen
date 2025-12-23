@@ -64,6 +64,7 @@ def plot_hists_and_bins(cloud_props_filepath, outpath, roi="small"):
     
 
 if __name__ == "__main__": 
+    # Define your own path here
     s2_csv = "data/processed/s2_cloud_cover_table_small_and_large_with_cloud_props.csv"
 
     cloud_props = pd.read_csv(s2_csv)

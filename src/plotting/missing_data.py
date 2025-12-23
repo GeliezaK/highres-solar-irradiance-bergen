@@ -156,6 +156,7 @@ def heatmap_available_values_s2(
 
 
 def main():
+    # Define your own paths here
     frost_data = "data/processed/frost_ghi_1M_Flesland_Florida_10:30-11:30UTC.csv"
     s2_data = "data/processed/s2_cloud_cover_large_thresh_40.csv"
     heatmap_missing_values_frost(frost_data)

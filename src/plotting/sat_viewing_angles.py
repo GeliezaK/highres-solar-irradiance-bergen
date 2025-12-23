@@ -10,6 +10,7 @@ import shapely.geometry as geom
 import cartopy.crs as ccrs
 from src.plotting import STATIONS
 
+# Define your own path here
 cloud_cover_table_filepath = "data/processed/s2_cloud_cover_table_small_and_large_with_cloud_props.csv"
 
 def mean_sat_angles_distribution(cloud_cover_table_filepath, outpath=None):

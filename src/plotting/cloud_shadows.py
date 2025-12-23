@@ -188,6 +188,7 @@ def plot_shadow_frequency_all_obs(monthly_shadow_frequency_filepath):
 
 
 if __name__ == "__main__": 
+    # Define your own path here
     s2_cloud_mask_sample = f"data/raw/S2_cloud_mask_large/S2_cloud_mask_large_2017-08-27_10-56-51-2017-08-27_10-56-51.tif"
     cloud_cover_table_filepath = "data/processed/s2_cloud_cover_table_small_and_large_with_cloud_props.csv"
     cloud_shadow_nc_res10 = "data/processed/cloud_shadow_thresh40.nc"

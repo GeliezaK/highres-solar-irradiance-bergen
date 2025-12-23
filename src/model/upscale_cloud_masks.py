@@ -205,6 +205,7 @@ def count_misclassifications(cloud_mask_10m_path, cloud_mask_coarse_path, resolu
         
 
 if __name__ == "__main__":
+    # Define your own paths here
     s2_cloud_mask_folderpath = "data/raw/S2_cloud_mask_large_thresh_40"
     cloud_shadow_10m_filepath = "data/processed/cloud_shadow_thresh40.nc"
     misclassification_count_out_csv = "data/processed/misclassification_counts_upscaled_cloud_mask.csv"

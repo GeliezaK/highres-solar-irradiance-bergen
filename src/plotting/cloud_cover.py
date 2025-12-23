@@ -381,6 +381,7 @@ def scatter_compare(df, col_x, col_y, title="Cloud Cover Comparison", outpath=No
     
  
 if __name__ == "__main__": 
+    # Define your own paths here
     # To plot small vs large roi cloud cover: 
     merged_s2_cloud_cover_filepath = "data/processed/s2_cloud_cover_large_thresh_40.csv"
     # to plot stations vs s2 cloud cover: 
