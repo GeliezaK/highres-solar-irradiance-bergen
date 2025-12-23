@@ -1,6 +1,6 @@
 # High-Resolution Solar Irradiance Model (Applied to Bergen, Norway)
 
-This repository contains the code to reproduce the **high-resolution cloud-informed solar irradiance modeling** for Bergen, Norway. The workflow was developed for the master thesis: "Modeling long-term surface solar irradiance using high-resolution satellite cloud data: a case study in Bergen, Norway" by Gelieza Kötterheinrich.  
+This repository contains the code to reproduce the **high-resolution cloud-informed solar irradiance modeling** for Bergen, Norway. The workflow was developed for the master thesis: "Modeling long-term surface solar irradiance using high-resolution satellite cloud data: a case study in Bergen, Norway" by Gelieza Kötterheinrich, University of Amsterdam.  
 
 The code can be adapted to any study area worldwide.
 
