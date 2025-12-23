@@ -3,7 +3,7 @@
 # ===================================================================================================
 # This script accesses the Norwegian Meteorological Institute Frost API.
 # Users must register for a personal client ID at https://frost.met.no/
-# and authenticate via HTTP basic auth (client ID as username, empty password).
+# and authenticate via HTTP basic auth (client ID as username).
 
 
 import requests
