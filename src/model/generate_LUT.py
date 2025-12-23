@@ -91,9 +91,9 @@ WC_REFF = 10 # from libRadtran example & Han (1994)
 LWC = 0.1 # from libRadtran simple water cloud example and Lee et al. (2010)
 IWC = 0.015 # from Hong and Liu (2015) for 60° Latitude 5km cloud altitude, vs. 0.015 from libRadtran simple ice cloud example
 
-# Cloud optical depth at 760nm, from Sentinel-5P
+# Cloud optical thickness from CLAAS-3
 # log-scaled 14 values between 0 and 60, 
-# plus values 65, 75, 90, 100, 140, 150, empirical values from claas cot small region
+# plus values 65, 75, 90, 100, 140, 150, empirical values from CLAAS-3 COT
 COT =  [0.1, 0.31, 0.75, 1.31, 2.17, 3.4, 4.87, 7.11, 9.54, 14.03, 19.66, 29.09, 38.73, 53.51, 65, 75, 90, 100, 140, 150]
  
 # Cloud base height in km, from CLAAS-3
