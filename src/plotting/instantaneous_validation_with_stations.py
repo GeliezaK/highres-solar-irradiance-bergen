@@ -162,7 +162,7 @@ def compute_error_model_tian2016(x, y):
 def compute_error_metrics(df, sim_col="flesland_ghi_sim_horizontal_log", 
                           obs_col="Flesland_1M_ghi_log", sky_col="sky_type", tolerance_pct=10):
     """
-    Compute performance metrics (MBE, MAE, RMSE, % within tolerance,
+    Compute performance metrics (rMBE, rMAE, RMSE, % within tolerance,
     NSE, Willmott d, Legates E1, R², and Kolmogorov–Smirnov test integral KSI)
     for modeled vs observed solar irradiance, both overall and per sky type.
 
@@ -195,13 +195,13 @@ def compute_error_metrics(df, sim_col="flesland_ghi_sim_horizontal_log",
         if len(obs) == 0:
             return {k: np.nan for k in [
                 "lambda", "delta", "sigma",
-                "MBE", "MAE", "RMSE", f"% within ±{tolerance_pct}%",
+                "rMBE", "rMAE", "RMSE", f"% within ±{tolerance_pct}%",
                 "NSE", "Willmott_d", "Legates_E1", "R2", "KSI"
             ]}
 
         # --- Basic metrics ---
-        mbe = np.mean(sim - obs)
-        mae = np.mean(np.abs(sim - obs))
+        rmbe = np.mean(sim - obs) / np.mean(obs)
+        rmae = np.mean(np.abs(sim - obs)) / np.mean(obs)
         rmse = np.sqrt(np.mean((sim - obs)**2))
         pct_within_tol = np.mean(np.abs(sim - obs) <= (tolerance_pct / 100) * obs) * 100
         
@@ -221,8 +221,8 @@ def compute_error_metrics(df, sim_col="flesland_ghi_sim_horizontal_log",
         ksi = compute_ksi(sim, obs)
 
         return {
-            "MBE": mbe,
-            "MAE": mae,
+            "rMBE": rmbe,
+            "rMAE": rmae,
             "RMSE": rmse,
             f"% within ±{tolerance_pct}%": pct_within_tol,
             "lambda": lam, 
